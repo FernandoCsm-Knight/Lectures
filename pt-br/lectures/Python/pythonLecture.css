@@ -52,6 +52,17 @@
     text-align: center;
 }
 
+.exercizes-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.exercizes-container h2 {
+    padding-block: 1rem;
+}
+
 .description-list {
     list-style: none;
     margin: 0 auto;
