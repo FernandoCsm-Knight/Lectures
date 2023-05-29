@@ -1,0 +1,104 @@
+/* HEADER */
+
+.header-container {
+    position: relative;
+}
+
+.header-title-container {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-logo-container {
+    height: 100px;   
+}
+
+.header-logo {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+.header-title h1 {
+    line-height: 1em;
+    padding-bottom: 1rem;
+}
+
+.header-authors-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* MAIN */
+
+.main-container {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.lecture-description {
+    text-align: center;
+}
+
+.description-list {
+    list-style: none;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.description-list li {
+    width: fit-content;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.description-list li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -1.5em;
+    transform: translate(0, -50%);
+    height: 1em;
+    width: 1em;
+    border: 1px solid var(--azul-titulo);
+    background-image: url(./imgs/icons/check-regular-48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.documents-container {
+    padding-block: 1rem;
+    display: grid;
+    gap: 1.3rem;
+}
+
+
+.documents-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+    .header-logo-container {
+        height: 125px;   
+    }
+}
