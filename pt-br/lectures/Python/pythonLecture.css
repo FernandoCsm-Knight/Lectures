@@ -110,6 +110,28 @@
     gap: 2rem;
 }
 
+.paper-container > h2 {
+    padding-block: 1.5rem;
+}
+
+.paper-container > h3 {
+    padding-bottom: 1rem;
+}
+
+.paper-container > h3,
+.paper-container > h4 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.paper-container .documents-container {
+    padding-block: 2rem;
+}
+
+.paper-container .documents-container h2 {
+    font-weight: 400;
+}
+
 /* MEDIA */
 
 @media screen and (min-width: 768px) {
